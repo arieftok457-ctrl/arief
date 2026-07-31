@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS wedding_rsvp (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    attendance ENUM('hadir', 'tidak_hadir') NOT NULL,
+    guests INT UNSIGNED NOT NULL DEFAULT 1,
+    message TEXT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
