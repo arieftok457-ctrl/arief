@@ -1,0 +1,16 @@
+# Kredensial & data sensitif
+.env
+
+# Dependensi / build
+/vendor/
+/node_modules/
+
+# Log
+*.log
+/logs/
+
+# OS & editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
